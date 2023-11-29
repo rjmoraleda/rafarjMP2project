@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const title = "About 1CartShop";
 const desc = "1CartShop ";
@@ -136,7 +137,7 @@ const Footer = () => {
   return <footer className="style-2">
     <div className="footer-top dark-view padding-tb">
         <div className="container">
-            <div className="row">
+            <div className="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content">
                 <div className="col">
                     <div className="footer-item our-address">
                         <div className="footer-inner">
@@ -257,6 +258,16 @@ const Footer = () => {
             </div>
         </div>
     </div>
+        {/* foot bottom*/}
+    <div className="footer-bottom">
+        <div className="container">
+            <div className="section-wrapper">
+                <p>&copy; 2023 <Link to="/">1CartShop</Link>Designed by <a href="/" target="_blank">Pael&RJ</a></p>
+            </div>
+
+        </div>
+    </div>
+
   </footer>
     
   
