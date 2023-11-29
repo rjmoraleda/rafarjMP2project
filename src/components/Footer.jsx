@@ -17,7 +17,7 @@ const addressList = [
     },
     {
         iconName: 'icofont-envelope',
-        text: 'info@shopcart.com',
+        text: 'info@1cartshop.com',
     },
 ]
 
@@ -106,11 +106,11 @@ const quickList = [
 const tweetList = [
     {
         iconName: 'icofont-twitter',
-        desc: <p>Aminur islam <a href="#">@ShopCart Greetings!  #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>,
+        desc: <p>John Doe <a href="#">@1CartShop Greetings!  #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>,
     },
     {
         iconName: 'icofont-twitter',
-        desc: <p>Somrat islam <a href="#">@ShopCart Hey! #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>,
+        desc: <p>Juan Dela Cruz <a href="#">@1CartShop Hey! #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>,
     },
 ]
 
@@ -156,6 +156,95 @@ const Footer = () => {
                                             ))
                                         }
                                     </ul>
+                                    <ul className="lab-ul social-icons">
+                                        {
+                                            socialList.map((val, i) => (
+                                                    <li key={i}>
+                                                    <a href="#" className={val.className}><i className={val.iconName}>{val.text}</i></a>
+                                                    </li>
+                                            
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div className="col">
+                    <div className="footer-item our-address">
+                        <div className="footer-inner">
+                            <div className="footer-content">
+                                <div className="title">
+                                    <h4>{quickTitle}</h4>
+                                </div>
+                                <div className="content">
+                                    <ul className="lab-ul office-address">
+                                        {
+                                            quickList.map((val, i) => (
+                                                    <li key={i}>
+                                                    <a href="#">{val.text}</a>
+                                                    </li>
+                                            ))
+                                        }
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div className="col">
+                    <div className="footer-item our-address">
+                        <div className="footer-inner">
+                            <div className="footer-content">
+                                <div className="title">
+                                    <h4>{ItemTitle}</h4>
+                                </div>
+                                <div className="content">
+                                    <ul className="lab-ul office-address">
+                                        {
+                                            ItemList.map((val, i) => (
+                                                    <li key={i}>
+                                                    <a href="#">{val.text}</a>
+                                                    </li>
+                                            ))
+                                        }
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div className="col">
+                    <div className="footer-item our-address">
+                        <div className="footer-inner">
+                            <div className="footer-content">
+                                <div className="title">
+                                    <h4>{tweetTitle}</h4>
+                                </div>
+                                <div className="content">
+                                    <ul className="lab-ul office-address">
+                                        {
+                                            tweetList.map((val, i) => (
+                                                    <li key={i}>
+                                                    <i className={val.iconName}></i>
+                                                    {val.desc}
+                                                    </li>
+                                            ))
+                                        }
+                                    </ul>
+
                                 </div>
                             </div>
 
@@ -166,11 +255,8 @@ const Footer = () => {
                 </div>
 
             </div>
-
         </div>
-
     </div>
-
   </footer>
     
   
