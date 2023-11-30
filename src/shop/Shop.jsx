@@ -12,7 +12,7 @@ const Shop = () => {
 
     //pages
     const [currentPage, setCurrentPage] = useState(1);
-    const productPerPage = 12;
+    const productPerPage = 10;
     
     const indexOfLastProduct = currentPage + productPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productPerPage;

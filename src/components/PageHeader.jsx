@@ -9,9 +9,9 @@ const PageHeader = ({title, curPage}) => {
                 <div className="col-12">
                     <div className='pageheader-content text-center'>
                         <h2>{title}</h2>
-                        <nav aria-label='breadcrumb justify-content-center'>
+                        <nav aria-label="breadcrumb justify-content-center">
                             <ol>
-                                <li className='breadcrumb-item'><Link to="/">Home</Link></li>
+                                <li className='breadcrumb-item'><Link to= "/">Home</Link></li>
                                 <li className='breadcrumb-item active' aria-current="page">{curPage}</li>
                             </ol>
                         </nav>

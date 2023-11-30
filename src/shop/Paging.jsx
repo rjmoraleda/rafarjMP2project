@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Paging = (productPerPage, totalProducts, paginate, activePage) => {
+const Paging = ({productPerPage, totalProducts, paginate, activePage}) => {
     const pageNumber = [];
     for (let i = 1; i <= Math.ceil(totalProducts / productPerPage); i++) {
         pageNumber.push(i)

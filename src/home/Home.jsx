@@ -8,6 +8,7 @@ import AboutUs from './AboutUs'
 import AppSection from './AppSection'
 import Sponsors from './Sponsors'
 
+
 const Home = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const Home = () => {
         <AboutUs/>
         <AppSection/>
         <Sponsors/>
+        
     </div>
   )
 }
