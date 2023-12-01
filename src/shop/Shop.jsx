@@ -5,6 +5,7 @@ const showResult = "Showing 01-12 of 139 Results"
 import data from "../products.json"
 import ProductsCards from './ProductsCards'
 import Paging from './Paging'
+// import Search from './Search'
 
 const Shop = () => {
     const [GridList, setGridList] = useState(true);
@@ -12,7 +13,7 @@ const Shop = () => {
 
     //pages
     const [currentPage, setCurrentPage] = useState(1);
-    const productPerPage = 10;
+    const productPerPage = 12;
     
     const indexOfLastProduct = currentPage + productPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productPerPage;
@@ -45,7 +46,7 @@ const Shop = () => {
                             </div>
 
                             <div>
-                                <ProductsCards GridList={GridList} products={products}/>
+                                <ProductsCards GridList={GridList} products={currentProducts}/>
                             </div>
                             <Paging
                                 productPerPage={productPerPage}
@@ -55,9 +56,11 @@ const Shop = () => {
                             />
                         </article>
                     </div>
-                    <div className=' col-lg-4 col-12'>
-                        right side
-                    </div>
+                    <div className=' col-lg-4 col-12'>Search Here</div>
+                        {/* <aside>
+                            <Search products={products} GridList={GridList}/>
+                        </aside> */}
+                    
                 </div>
 
             </div>

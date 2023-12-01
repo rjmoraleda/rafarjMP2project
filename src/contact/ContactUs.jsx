@@ -22,7 +22,7 @@ const ContactUs = () => {
     <PageHeader title={"Get In Touch With Us"} curPage={"Contact Us"}/>
       <div className='contact section-bg'>
             <div className="container">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
        <label>Name</label>
        <input type="text" name="user_name" />
        <label>Email</label>       <input type="email" name="user_email" />

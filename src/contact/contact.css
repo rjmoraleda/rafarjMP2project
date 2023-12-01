@@ -1,4 +1,11 @@
 .contact {
     width: 50%;
     margin: 0 auto;
+    height: 50%;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    
 }
